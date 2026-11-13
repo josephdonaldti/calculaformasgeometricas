@@ -2,14 +2,21 @@
 import area_circulo as circulo
 
 def calcular_area_retangulo():
-    pass  # Função para calcular a área do retângulo
+    largura = 5
+    altura = 3
+    area = largura * altura
+    print(f"A área do retângulo é: {area}")
 
 def calcular_area_circulo(area):
     resultado_area_circulo = circulo.calcular_area_circulo(area)  # Exemplo de uso da função do outro arquivo
     return resultado_area_circulo
 
 def calcular_area_triangulo():
-    pass  # Função para calcular a área do triângulo
+    base = 6
+    altura = 4
+
+    area = (base * altura) / 2
+    print(f"A área do triângulo é: {area}")
 
 def main():
     raio = 5
