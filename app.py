@@ -1,15 +1,17 @@
 #  Arquivo principal do sistema que calcula área geométricas que virão de outros arquivos
 import area_circulo as circulo
 
-def calcular_area_retangulo():
-    pass  # Função para calcular a área do retângulo
+def calcular_area_retangulo(base, altura):
+    """Calcula a área de um retângulo dado sua base e altura."""
+    return base * altura
 
 def calcular_area_circulo(area):
     resultado_area_circulo = circulo.calcular_area_circulo(area)  # Exemplo de uso da função do outro arquivo
     return resultado_area_circulo
 
-def calcular_area_triangulo():
-    pass  # Função para calcular a área do triângulo
+def calcular_area_triangulo(base, altura):
+    """Calcula a área de um triângulo dado sua base e altura."""
+    return (base * altura) / 2
 
 def main():
     raio = 5
