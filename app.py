@@ -2,14 +2,19 @@
 import area_circulo as circulo
 
 def calcular_area_retangulo():
-    pass  # Função para calcular a área do retângulo
+    base = float(input("Digite a base do retângulo: "))
+    altura = float(input("Digite a altura do retângulo: "))
 
 def calcular_area_circulo(area):
-    resultado_area_circulo = circulo.calcular_area_circulo(area)  # Exemplo de uso da função do outro arquivo
-    return resultado_area_circulo
+    raio = float(input("Digite o raio do círculo: "))
+    area = circulo.calcular_area_circulo(raio)
+    return area
 
 def calcular_area_triangulo():
-    pass  # Função para calcular a área do triângulo
+    base = float(input("Digite a base do triângulo: "))
+    altura = float(input("Digite a altura do triângulo: "))
+    area = (base * altura) / 2
+    return area
 
 def main():
     raio = 5
